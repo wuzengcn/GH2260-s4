@@ -166,7 +166,7 @@ Implications in the free market model
 
 <center>
 
-<img src="/pic/S4-F2.png" width="500">
+<img src="./pic/S4-F2.png" width="500">
 
 </center>
 
