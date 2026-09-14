@@ -378,7 +378,7 @@ equi1 +
 
 <center>
 
-<img src = "pic/S4-F3.png" width = "800px"/>
+<img src = "./pic/S4-F3.png" width = "800px"/>
 
 </center>
 
@@ -402,11 +402,11 @@ equi1 +
 
 <center>
 
-<img src = "pic/S4-F4.png" width = "800px"/>
+<img src = "./pic/S4-F4.png" width = "800px"/>
 
 <br>
 
-<img src = "pic/S4-F5.png" width = "800px"/>
+<img src = "./pic/S4-F5.png" width = "800px"/>
 
 </center>
 :::
@@ -499,7 +499,7 @@ Adam Smith
 
 <center> 
 
-<img src="/pic/S4-mono.png" width="130%">
+<img src="./pic/S4-mono.png" width="130%">
 
 </center>
 
