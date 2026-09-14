@@ -73,7 +73,7 @@ Structure of economy: households and firms
 
 <center>
 
-<img src="/pic/S2-F1.png" width="800">
+<img src="./pic/S2-F1.png" width="800">
 
 </center>
 
@@ -166,7 +166,7 @@ Implications in the free market model
 
 <center>
 
-<img src="pic/S4-F2.png" width="500">
+<img src="./pic/S4-F2.png" width="500">
 
 </center>
 
@@ -588,7 +588,7 @@ Adam Smith
 
 <center> 
 
-<img src="/pic/S4-mono.png" width="70%">
+<img src="./pic/S4-mono.png" width="70%">
 
 </center>
 
@@ -674,7 +674,7 @@ Means to correct market failure
 ### Positive externality
 <center>
 
-<img src="/pic/S4-F6.png" width="600">
+<img src="./pic/S4-F6.png" width="600">
 
 </center>
 
@@ -682,7 +682,7 @@ Means to correct market failure
 
 <center>
 
-<img src="/pic/S4-F7.png" width="600">
+<img src="./pic/S4-F7.png" width="600">
 
 </center>
 
@@ -713,7 +713,7 @@ Means to correct market failure
 
 <center>
 
-<img src="/pic/S4-F6.png" width="600">
+<img src="./pic/S4-F6.png" width="600">
 
 </center>
 
@@ -743,7 +743,7 @@ Government interventions
 
 <center>
 
-<img src="/pic/S4-F6.png" width="600">
+<img src="./pic/S4-F6.png" width="600">
 
 </center>
 
@@ -858,7 +858,7 @@ an asymmetry of information.
 
 <center> 
 
-<img src="/pic/F9.5.png" width="130%">
+<img src="./pic/F9.5.png" width="130%">
 
 </center>
 
