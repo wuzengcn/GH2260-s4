@@ -588,7 +588,7 @@ Adam Smith
 
 <center> 
 
-<img src="./pic/S4-mono.png" width="70%">
+<img src="./pic/S4-Mono.png" width="70%">
 
 </center>
 
