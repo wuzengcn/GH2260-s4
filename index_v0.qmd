@@ -1,39 +1,40 @@
 ---
 format:
   revealjs:
-    theme: styles1.scss
+    theme: styles.scss
     transition: fade
     slide-number: true
     wide: true
     chalkboard: true
-    margin: 0.05
+    margin: 0.1
     footer: "Introduction to Health Economics | Fall 2026 | Session 4"
     controls: true
-    center: true
 ---
 
-:::{.layout ="[90,10]"}
+::: {.title-slide}
 
-:::{first-column}
+# Medical care markets: Market failures and government interventions
 
-[Session 4]{.kicker}
+<br>
 
-<div class="rule"></div>
 
-<p class = "h1">Medical care markets</p>
+Wu Zeng, MD, PHD
 
-<p class = "h2">Market failures and government interventions</p>
+<br>
 
-[Wu Zeng, MD, PHD, Georgetown University]{.label}
+Associate Professor
+
+Department of Global Health
+
+Georgetown University
+
+`wz192@georgetown.edu`
+
+<br>
+
+[Claimer]{.themec}: I declares no conflict of interest
 
 :::
-
-:::{second-column}
-
-<!-- nothing -->
-
-:::
-::::
 
 ---
 ```{r setup, include=FALSE}
@@ -46,30 +47,15 @@ library(tidyverse)
 
 ## Outline 
 
-:::{.bullet-list}
 
 - Review of last session
 - Market for the health sector
 - Health spending, access and quality
 - Market failure in the health sector
 
-:::
-
 ---
 
-::::{.slide-list}
-:::{.slide-header}
-
-[Econommy]{.kicker}
-
-<div class="rule"></div>
-
-<p class = "h2">Circular flow of economy</p>
-
-Structure of economy: households and firms
-
-:::
-:::{second-column}
+## Circular flow of economy
 
 <center>
 
@@ -77,17 +63,12 @@ Structure of economy: households and firms
 
 </center>
 
-:::
-::::
-
 --- 
 
 ## Demand and supply
 
-::::{.two-col-grid}
-::: {.grid-item}
-
-[Demand]{.accent .lead}
+:::: columns
+::: {.column width="50%"}
 
 - Law of demand
 - Factors shifting the demand curve
@@ -101,10 +82,7 @@ Structure of economy: households and firms
     change
 
 :::
-::: {.grid-item}
-
-[Supply]{.accent .lead}
-
+::: {.column width="50%"}
 - Law of supply
 - Factors shifting the supply curve
   - Input prices
@@ -118,57 +96,39 @@ Structure of economy: households and firms
 
 ## Equilibrium
 
-::::{.two-col-grid}
-::: {.grid-item}
+- Definition
 
-<center>
-
-[1]{.n-circle}
-
-Definition
-
-</center>
-:::
-:::{.grid-item}
-
-<center>
-
-[2]{.n-circle}
-
-Implications in the free market model
-
-</center>
-
-:::
-::::
+- Implications in the free market model
 
 ---
 
 ## Competitive market
 
-::::{.two-col-grid}
-::: {.grid-item}
-[Conditions]{.accent .lead}
-  
-- Many buyers and sellers
-- A standardized product
-- Mobile resources (free enter and exit the market)
-- Perfect information
+::::columns
+::: {.column width="50%"}
+
+- Conditions
+  - Many buyers and sellers
+  - A standardized product
+  - Mobile resources (free enter and exit the market)
+  - Perfect information
 :::
 
-:::{.grid-item}
-[Implications]{.accent .lead}
-
-- Individual firms and comsumers are price takers. 
-- The price is jointly determined by the market. 
+:::{.column width="50%"}
+- Implications
+  - Individual firms and comsumers are price takers. 
+  - The price is jointly determined by the market. 
 :::
 ::::
 
+
 <center>
 
-<img src="/pic/S4-F2.png" width="500">
+<img src="/pic/S4-F2.png" width="800">
 
 </center>
+
+
 
 ---
 
@@ -183,8 +143,8 @@ Implications in the free market model
 
 ## Welfare and government interventions
 
-::::{.two-col-grid}
-::: {.grid-item}
+::: {.columns}
+::: {.column width="50%"}
 
 - Welfare: It is the sum of consumer surplus and producer surplus
   - Price control and taxation can reduce welfare
@@ -195,7 +155,7 @@ Implications in the free market model
 
 :::
 
-::: {.grid-item}
+::: {.column width="50%"}
 ```{r echo=FALSE, fig.width=6, fig.height=6}
 dta1 <- data.frame(x = c(0,0,50,0), y = c(0,400,400,0))
 
@@ -226,6 +186,10 @@ equi1 +
 
 :::
 
+
+
+
+
 ---
 
 ## What about medical care market?
@@ -244,24 +208,32 @@ equi1 +
 
 ## Competitive markets 
 
-::::{.two-col-grid}
-::: {.grid-item}
+:::: columns
+::: {.column width="50%"}
 
-[Conditions of competitive market]{.accent .lead} 
+[Conditions]{.themec} of competitive market 
 
 - Producers
-  - Face [competition]{.emcolor}
-  - Face no barriers to [entry or exit]{.emcolor}
+
+  - Face [competition]{.themec}
+  
+  - Face no barriers to [entry or exit]{.themec}
+
 - Consumers: 
-  - Are [perfectly informed]{.emcolor} of benefits and prices of all goods
-  - Bear [all costs]{.emcolor} and receive all benefits (No [externalities]{.emcolor})
-- There are no [public Good]{.emcolor} characteristics 
-- Products are [identical]{.emcolor} (price is only factor)
+  
+  - Are [perfectly informed]{.themec} of benefits and prices of all goods
+  
+  - Bear [all costs]{.themec} and receive all benefits (No [externalities]{.themec})
+  
+- There are no [public Good]{.themec} characteristics 
+
+- Products are [identical]{.themec} (price is only factor)
+
 :::
 
-:::{.grid-item}
+:::{.column width="50%"}
 
-[Efficient market presented in health care?]{.accent .lead}
+### Efficient market presented in health care?
 
 - Lack of competition (monopoly, oligopoly)
 - Goods characteristics
@@ -304,10 +276,10 @@ equi1 +
 
 ## Views on government involvement in medical care
 
-::::{.two-col-grid}
-:::{.grid-item}
+:::: columns 
+:::{.column width="50%"}
 
-[Pro favor government involvement]{.accent .lead}
+### Some [favor]{.themec} government involvement in medical care
 
 - Medicine is too complicated to be left to market forces
 - Medicine difficult to understand; patents must rely on doctors
@@ -315,9 +287,9 @@ equi1 +
 - Externalities in medicine, especially infectious diseases, require collective action to protect society
 - Provision of medical care based on the ability to pay is morally repugnant
 :::
-:::{.grid-item}
+:::{.column width="50%"}
 
-[Against government involvement]{.accent .lead}
+### Some [oppose]{.themec} government involvement in medical care
 
 - U.S. system has remained mostly market-based
 - This is evidence of deep American distrust of federal government involvement in health care matters
@@ -334,7 +306,7 @@ equi1 +
 
 <center>
 
-> Provide good [access]{.emcolor} to [high-quality]{.emcolor} medical care at [affordable prices]{.emcolor}
+### Provide good [access]{.themec} to [high-quality]{.themec} medical care at [affordable prices]{.themec}
 
 </center>
 
@@ -342,16 +314,16 @@ equi1 +
 
 ## Health care spending
 
-[A major factor driving health care reform debate is spending]{.kicker}
+A major factor driving health care reform debate is spending, including total spending, spending per person, and as a share of total economic output
 
-::::{.two-col-grid}
-::: {.grid-item}
+:::: columns
+::: {.column width="50%"}
 - Hospital care
 - Physicians’ services
 - Prescription drugs, other medical products
 - Other personal health care spending
 :::
-::: {.grid-item}
+::: {.column width="50%"}
 
 <center>
 
@@ -366,15 +338,15 @@ equi1 +
 
 ## Prospects of future
 
-::::{.two-col-grid}
-::: {.grid-item}
+::::columns 
+:::{.column width="50%"}
 - United States spends more on medical care and devotes a larger percentage of economic output to medical care than any other country in the world
   - US: 17% of GDP in 2023 in comparison to 10% in Canada, 11% in Germany, and 12% in France
 - What is a reasonable percentage of output to devote to medical care spending? 
 - Are we getting our money’s worth? How much can we afford? (discussion)
 :::
 
-:::{.grid-item}
+:::{.column width="50%"}
 
 <center>
 
@@ -387,18 +359,7 @@ equi1 +
 
 ---
 
-::::{.slide-list}
-:::{.slide-header}
-
-[Access to care]{.kicker}
-
-<div class="rule"></div>
-
-<p class = "h2">Access to care in the United States</p>
-
-:::
-
-:::{second-column}
+## Access to care (need new data)
 
 <center>
 
@@ -409,44 +370,23 @@ equi1 +
 <img src = "pic/S4-F5.png" width = "800px"/>
 
 </center>
-:::
-::::
 
 --- 
 
 ## Medical outcomes 
 
-::::{.two-col-grid}
-::: {.grid-item}
-
-[Poor health outcomes]{.accent .lead}
-
-- Life expectancy
-- Infant and maternal mortality rate 
-:::
-:::{.grid-item}
-
-[High incidence]{.accent .lead}
-
-- Drug abuse 
-- Violence
-- Obesity
-- etc. 
-:::
-::::
+- Relative poorer health outcomes 
+  - Life expectancy
+  - Infant and maternal mortality rate 
+- High incidence 
+  - Drug abuse 
+  - violence
+  - Obesity
+  - etc. 
 
 ---
 
-::::{.slide-list}
-:::{.slide-header}
-[Spending]{.kicker}
-
-<div class="rule"></div>
-
-<p class = "h2">Spending on health care in the United States</p>
-
-:::
-:::{second-column}
+## Underlying factors driving spending
 
 - National spending has slowed considerably over the past decade
 - 2001–2007: spending grew at an annual rate of 7.5%
@@ -456,29 +396,19 @@ equi1 +
   - Great Recession
   - Temporary decline in the introduction of new medical technologies
   - Increase in patient cost sharing in the form of higher deductibles and copays
-:::
-::::
+
 ---
 
 ## The competitive market model
 
-::::{.two-col-grid}
-::: {.grid-item}
-
-[Efficiency]{.emcolor} is the core
-
+- [Efficiency]{.themec} is the core
   - Technical efficiency
   - Allocative efficiency
-:::
-:::{.grid-item}
-Adam Smith
-
-- Individual decision-making is motivated by [self-interest]{.emcolor}
-- Guided by the “invisible hand” of the market, this self-serving behavior serves to promote the interests of others
-- In a perfectly competitive market, optimizing behavior by firms and individuals leads to [efficient]{.emcolor} outcomes
-- Modern day economists evaluate markets by efficiency and equity
-:::
-::::
+- Adam Smith
+  - Individual decision-making is motivated by [self-interest]{.themec}
+  - Guided by the “invisible hand” of the market, this self-serving behavior serves to promote the interests of others
+  - In a perfectly competitive market, optimizing behavior by firms and individuals leads to [efficient]{.themec} outcomes
+  - Modern day economists evaluate markets by efficiency and equity
 
 ---
 
@@ -488,12 +418,12 @@ Adam Smith
 ::: {.column width="50%"}
 - Market failure
     - Markets fail to allocate resources optimally
-        - when firms have [market power]{.emcolor}, 
-        - when there are [externalities]{.emcolor} in consumption and production, 
-        - when the good produced is a [public good]{.emcolor}.
-        - when there is [asymmetric information]{.emcolor} between buyers and sellers
+        - when firms have [market power]{.themec}, 
+        - when there are [externalities]{.themec} in consumption and production, 
+        - when the good produced is a [public good]{.themec}.
+        - when there is [asymmetric information]{.themec} between buyers and sellers
 - Market power
-    - Market power is depicted graphically by any [departure]{.emcolor} from perfectly elastic demand curves
+    - Market power is depicted graphically by any [departure]{.themec} from perfectly elastic demand curves
 :::
 :::{.column width="50%"}
 
@@ -510,8 +440,8 @@ Adam Smith
 
 ## Market failure in medical markets: Reasons
 
-::::{.two-col-grid}
-::: {.grid-item}
+:::: colulmns
+::: {.column width="50%"}
 - Lack of competition (monopoly, oligopoly)
 - Goods characteristics
   - Externalities (merit goods)
@@ -520,7 +450,7 @@ Adam Smith
 - Imperfect information (e.g.,supplier induced demand, moral hazard and adverse selection) 
 - Barriers to entry
 :::
-:::{.grid-item}
+:::{.column width="50%"}
 
 <img src="https://www.opportunityinstitute.org/wp-content/uploads/2010/06/market-failure-overlaps1-600x464.jpg" >
 :::
@@ -558,37 +488,31 @@ Adam Smith
 
 ---
 
-## Market failure 1: Natural monopoly or monoposony {.smaller}
+## Market failure 1: Natural monopoly or monoposony (Single purchase of inputs)
 
-::::{.four-grid}
-::: {.grid-item}
+:::: columns
+::: {.column width="50%"}
 
-[Competitive market assumed]{.lead .accent}
-
-- Competition
-- Many sellers (providers)
+- Competitive market assumed 
+  - Competition
+  - Many sellers (providers)
+- Medical care 
+  - Few sellers (e.g., hospitals): barriers to entry (e.g., licensing)
+  - Monopoly or oligopoly (e.g., pharmaceutical companies)
 :::
-:::{.grid-item}
-[Medical care]{.lead .accent}
+:::{.column width="50%"}
 
-- Few sellers (e.g., hospitals): barriers to entry (e.g., licensing)
-- Monopoly or oligopoly (e.g., pharmaceutical companies)
-:::
-:::{.grid-item}
-[Means to address monopoly]{.accent .lead}
-
-- Regulations 
-  - [Price controls]{.emcolor}  
-  - Entry restrictions 
-  - Limits on new product development 
-  - Enforce antitrust laws   
-- Tax policy
-:::
-:::{.grid-item}
+- Means to address monopoly
+  - Regulations 
+    - [Price controls]{.themec}  
+    - Entry restrictions 
+    - Limits on new product development 
+    - Enforce antitrust laws   
+  - Tax policy 
 
 <center> 
 
-<img src="/pic/S4-mono.png" width="70%">
+<img src="/pic/S4-mono.png" width="100%">
 
 </center>
 
@@ -609,35 +533,35 @@ Adam Smith
 
 ## Market failure 2: Public goods
 
-::::{.two-col-grid}
-::: {.grid-item}
+:::: columns
+::: {.column width="50%"}
 
-Markets distribte goods efficiently, when
-
+- Markets distribte goods efficiently, when
   - When people spend their own money to enjoy the benefits of consumption
   - When non-purchasers are excluded from the benefits of consumption (avoid free riders)
-
-But in some situations, these rules do not apply
-
-- Public goods
-  - [Nonexcludable]{.emcolor} and 
-  - [nonrival]{.emcolor} (e.g. national defense, air traffic control)
+- But in some situations, these rules do not apply
+  - Public goods
+    - [Nonexcludable]{.themec} and 
+    - [nonrival]{.themec} (e.g. national defense, air traffic control)
 :::
-:::{.grid-item}
+:::{.column width="50%"}
 
-Means to correct market failure
-
-- Government provision of public goods
-- Taxation to finance public goods
-- Subsidies
-- Mandatory regulations
+- ### Means to correct market failure
+  - Government provision of public goods
+  - Taxation to finance public goods
+  - Subsidies
+  - Mandatory regulations
 
 :::
 ::::
 
+. . .
+
+- Is [health care]{.themec} a [public good]{.themec}? Why or why not?
+
 ---
 
-## Is [health care]{.emcolor} a [good]{.emcolor} or right?
+## Debate on health care system 
 
 <center> 
 
@@ -649,36 +573,37 @@ Means to correct market failure
 
 ## Merit goods 
 
-> Definition: Merit goods are goods that are under-consumed in a free market because people do not fully appreciate the benefits of consuming them.
+- Definition: Merit goods are goods that are under-consumed in a free market because people do not fully appreciate the benefits of consuming them.
 
-> Examples: Vaccinations, education, and health care
+- Examples: Vaccinations, education, and health care
 
 ---
 
 ## Market failure 3: Externalities
 
-::::{.two-col-grid}
-::: {.grid-item}
+::::columns 
+::: {.column width="50%"}
 
-- Definition: An externality is a [cost]{.emcolor} or a [benefit]{.emcolor} arising from an economic transaction that falls on people who do not participate in the transaction
-  - A benefit in this case is called a [positive externality]{.emcolor} or [external benefit]{.emcolor}.
+- Definition: An externality is a [cost]{.themec} or a [benefit]{.themec} arising from an economic transaction that falls on people who do not participate in the transaction
+  - A benefit in this case is called a [positive externality]{.themec} or [external benefit]{.themec}.
     - Vaccine against contagious diseases
-  - A cost is called a [negative externality]{.emcolor} or [external cost]{.emcolor}.
+  - A cost is called a [negative externality]{.themec} or [external cost]{.themec}.
     - A factory that dumps toxic waste into a river
-- Policy issue – design of appropriate institutions, legislation and regulation to align individual [incentives]{.emcolor} and social welfare
+- Policy issue – design of appropriate institutions, legislation and regulation to align individual [incentives]{.themec} and social welfare
 
 :::
-:::{.grid-item}
+:::{.column width="50%"}
 
 :::{.panel-tabset}
-### Positive externality
+### Positive externality in consumption
+
 <center>
 
 <img src="/pic/S4-F6.png" width="600">
 
 </center>
 
-### Negative externality
+### Negative externality in consumption
 
 <center>
 
@@ -696,20 +621,28 @@ Means to correct market failure
 
 ## Positive externality
 
-::::{.two-col-grid}
-::: {.grid-item}
+:::: columns
+::: {.column width="50%"}
 
 - Private benefit
-  - [Direct benefit]{.emcolor} to [consumers]{.emcolor} who buy and consume good
+
+  - [Direct benefit]{.themec} to [consumers]{.themec} who buy and consume good
+
 - Social benefit
-  - [Indirect benefit to all]{.emcolor} in society, including those who do not consume it
-    - Vaccination (herd immunity effect)
-    - ‘Caring externality’ – others in society care that other people might not be able to receive treatment    
+  
+  - [Indirect benefit to all]{.themec} in society, including those who do not consume it
+  
+      - Vaccination (herd immunity effect)
+      
+      - ‘Caring externality’ – others in society care that other people might not be able to receive treatment
+      
   - Cause market failure (too little consumption)
+    
       - Demand curve = ‘marginal private benefit’ (MPB)
+  
       - But, where positive externalities exist, additional ‘marginal social benefits’ (MSB)
 :::
-:::{.grid-item}
+:::{.column width="50%"}
 
 <center>
 
@@ -724,22 +657,25 @@ Means to correct market failure
 
 ## Externality leads to market failure 
 
-::::{.two-col-grid}
-::: {.grid-item}
+:::: colulmns
+::: {.column width="50%"}
 
-[Why?]{.kicker}
+### Why? 
 
--  Where externalities exist, the price mechanism does [not]{.emcolor} result in allocative efficiency, therefore market failure.
+-  Where externalities exist, the price mechanism does [not]{.themec} result in allocative efficiency, therefore market failure.
+
 - With positive externalities people that would benefit are not buying the product
-- Therefore there is under supply of product and [‘deadweight']{.emcolor} social loss
 
-Government interventions 
+- Therefore there is under supply of product and [‘deadweight']{.themec} social loss
+
+### Government interventions 
 
   - Subsidy/Tax 
+  
   - Regulations of quantity produced 
 :::
 
-:::{.grid-item}
+:::{.column width="50%"}
 
 <center>
 
@@ -756,7 +692,7 @@ Government interventions
 
 <center>
 
-<iframe width="900" height="500" src="https://www.youtube.com/embed/K4qvB7KXAw4" title="Public Goods and Externalities" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1037" height="583" src="https://www.youtube.com/embed/K4qvB7KXAw4" title="Public Goods and Externalities" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </center>
 
@@ -772,52 +708,21 @@ Government interventions
 
 ## Market failure 4: Asymmetry of information
 
-> Definition: [Asymmetry of information]{.emcolor} exists when one person in an economic transaction has more relevant information than the other person. 
+- Definition: 
 
-In health care settings, asymmetry of information raises three issues: 
+  - [Asymmetry of information]{.themec} exists when one person in an economic transaction has more relevant information than the other person. 
 
-::::{.three-col-grid}
-::: {.grid-item}
+- In health care settings, asymmetry of information raises three issues: 
 
-<center>
+- In the medical care market, it leads to 
 
-[1]{.n-circle}
+  - [Supplier-induced demand]{.themec}: Patients have little information and have to rely on physicians’ advice
 
-supplier-induced demand
+- in the health insurance market, it leads to 
 
-</center>
-
-- Patients have little information and have to rely on physicians’ advice
-- Medicare care market
-:::
-
-::: {.grid-item}
-
-<center>
-
-[2]{.n-circle}
-
-Adverse selection
-
-</center>
-- Individuals have better information about their health status than insurers
-- Health insurance market
-:::
-
-:::{.grid-item}
-
-<center>
-
-[3]{.n-circle}
-
-Moral hazard
-
-</center>
-- Moral hazard occurs anytime there is an opportunity to gain from acting differently from the implied principles of a contract
-- Health insurance market
-
-:::
-::::
+  - [Adverse selection]{.themec}
+  
+  - [Moral hazard]{.themec}
 
 --- 
 
@@ -836,18 +741,18 @@ Moral hazard
 :::: columns
 ::: {.column width="50%"}
 
-- Definition: Increased .emcolor[demand] as a result of a provider (e.g. a doctor) exploiting
+- Definition: Increased .themec[demand] as a result of a provider (e.g. a doctor) exploiting
 an asymmetry of information. 
 
-  - More generally, observation that when faced with shock to equilibrium (e.g., .emcolor[increase supply]), health providers may respond by .emcolor[‘inducing demand’] (shift demand curve) for their services
+  - More generally, observation that when faced with shock to equilibrium (e.g., .themec[increase supply]), health providers may respond by .themec[‘inducing demand’] (shift demand curve) for their services
 
 - It is also an agent problem
 
-  - In practice, health providers (like other human beings!) are not perfect at putting the interests of others before their own .emcolor[interests]
+  - In practice, health providers (like other human beings!) are not perfect at putting the interests of others before their own .themec[interests]
 
 - Why does it lead to inefficiency: 
 
-  - .emcolor[Unnecessary use] of medical services for consumers
+  - .themec[Unnecessary use] of medical services for consumers
 :::
 
 :::{.column width="50%"}
@@ -893,7 +798,7 @@ an asymmetry of information.
 - Definition: Moral hazard occurs anytime there is an opportunity to gain from acting differently
 from the implied principles of a contract
 
-  - .emcolor[The contract changes consumer’s behaviors]
+  - .themec[The contract changes consumer’s behaviors]
 
 - Because private actions are hidden from view, both parties have an opportunity to gain from unpredictable behavior
 
@@ -962,11 +867,11 @@ from the implied principles of a contract
 
 - Adverse selection arises because
 
-  - Individuals may have .emcolor[better information] of their risk status than does the insurance company
+  - Individuals may have .themec[better information] of their risk status than does the insurance company
 
   - Individuals with a low risk of requiring health care may find it difficult to obtain ”actuarially fair” insurance – premium equal to expected cost of future consumption
 
-  - Those with .emcolor[lower risk] will .emcolor[not purchase insurance] priced to cater for those with
+  - Those with .themec[lower risk] will .themec[not purchase insurance] priced to cater for those with
 average risk, whereas higher risk individuals will, SO…
 
 :::
@@ -975,15 +880,15 @@ average risk, whereas higher risk individuals will, SO…
 - … average risk level of those remaining will
 rise (as will premium) (continually)
 
-- Result: those at .emcolor[low risk] (and high risk with
-low income) .emcolor[not insured] (as premium rises)
+- Result: those at .themec[low risk] (and high risk with
+low income) .themec[not insured] (as premium rises)
 
 - Solutions:
 
-  - Private insurance may .emcolor[‘experience rate’] (set a
+  - Private insurance may .themec[‘experience rate’] (set a
 different premium for different risk groups)
 
-  - Compulsory .emcolor[public insurance]. Stops low risk
+  - Compulsory .themec[public insurance]. Stops low risk
 leaving market (forced cross-subsidisation of
 those at high risk by those at low risk)
 :::
@@ -991,18 +896,9 @@ those at high risk by those at low risk)
 
 ---
 
-::::{.slide-list}
-:::{.slide-header}
-[Government failure]{.kicker}
+## Government failure 
 
-<div class="rule"></div>
-
-<p class = "h2">Government failure</p>
-
-Government failure occurs when government intervention in the market causes a more inefficient allocation of resources and a decline in economic welfare.
-
-:::
-:::{second-column}
+- Definition: Government failure occurs when government intervention in the market causes a more inefficient allocation of resources and a decline in economic welfare.
 
 - Government failure is common 
 
@@ -1013,8 +909,6 @@ Government failure occurs when government intervention in the market causes a mo
   - Subsidies (e.g., agricultural subsidies)
   
 - Whetehr efficiency and fairness are best addressed by impperfect government or imperfect markets is a matter of debate
-:::
-::::
 
 ---
 
